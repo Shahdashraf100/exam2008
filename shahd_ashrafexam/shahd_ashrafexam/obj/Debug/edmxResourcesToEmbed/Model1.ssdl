@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="facebook2008Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="exam">
+    <Key>
+      <PropertyRef Name="iduser" />
+    </Key>
+    <Property Name="iduser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="99" />
+    <Property Name="passwordd" Type="varchar" MaxLength="100" />
+    <Property Name="age" Type="varchar" MaxLength="60" />
+    <Property Name="gender" Type="varchar" MaxLength="200" />
+    <Property Name="phonenum" Type="varchar" MaxLength="11" />
+    <Property Name="city" Type="varchar" MaxLength="88" />
+  </EntityType>
+  <EntityType Name="exam3">
+    <Key>
+      <PropertyRef Name="iduser" />
+    </Key>
+    <Property Name="iduser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="99" />
+    <Property Name="passwordd" Type="varchar" MaxLength="100" />
+    <Property Name="age" Type="int" />
+    <Property Name="gender" Type="varchar" MaxLength="200" />
+    <Property Name="phonenum" Type="varchar" MaxLength="11" />
+    <Property Name="city" Type="varchar" MaxLength="88" />
+  </EntityType>
+  <EntityContainer Name="facebook2008ModelStoreContainer">
+    <EntitySet Name="exam" EntityType="Self.exam" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="exam3" EntityType="Self.exam3" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

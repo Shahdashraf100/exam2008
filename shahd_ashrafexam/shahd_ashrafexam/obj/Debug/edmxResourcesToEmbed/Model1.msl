@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="facebook2008ModelStoreContainer" CdmEntityContainer="facebook2008Entities">
+    <EntitySetMapping Name="exams">
+      <EntityTypeMapping TypeName="facebook2008Model.exam">
+        <MappingFragment StoreEntitySet="exam">
+          <ScalarProperty Name="iduser" ColumnName="iduser" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="passwordd" ColumnName="passwordd" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="phonenum" ColumnName="phonenum" />
+          <ScalarProperty Name="city" ColumnName="city" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exam3">
+      <EntityTypeMapping TypeName="facebook2008Model.exam3">
+        <MappingFragment StoreEntitySet="exam3">
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="phonenum" ColumnName="phonenum" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="passwordd" ColumnName="passwordd" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="iduser" ColumnName="iduser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

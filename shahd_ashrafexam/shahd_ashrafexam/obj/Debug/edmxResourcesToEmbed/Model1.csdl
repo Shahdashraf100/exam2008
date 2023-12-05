@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="facebook2008Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="exam">
+    <Key>
+      <PropertyRef Name="iduser" />
+    </Key>
+    <Property Name="iduser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="99" FixedLength="false" Unicode="false" />
+    <Property Name="passwordd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="age" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="gender" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="phonenum" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="city" Type="String" MaxLength="88" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="facebook2008Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="exams" EntityType="Self.exam" />
+    <EntitySet Name="exam3" EntityType="facebook2008Model.exam3" />
+  </EntityContainer>
+  <EntityType Name="exam3">
+    <Key>
+      <PropertyRef Name="iduser" />
+    </Key>
+    <Property Name="iduser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="99" FixedLength="false" Unicode="false" />
+    <Property Name="passwordd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="age" Type="Int32" />
+    <Property Name="gender" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="phonenum" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="city" Type="String" MaxLength="88" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

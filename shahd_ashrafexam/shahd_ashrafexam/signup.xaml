@@ -1,0 +1,48 @@
+﻿<Page x:Class="shahd_ashrafexam.signup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:shahd_ashrafexam"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="signup">
+
+    <Grid Background="#FFF6EAEA">
+        
+        
+        <Label Style="{StaticResource label1}"  Content="sign up" HorizontalAlignment="Left" Margin="363,27,0,0" VerticalAlignment="Top"/>
+        <Label  FontSize="22" Content="username" HorizontalAlignment="Left" Margin="30,102,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="usernametx" HorizontalAlignment="Left" Margin="155,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label FontSize="22" Content="password" HorizontalAlignment="Left" Margin="33,146,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="22" Content="age" HorizontalAlignment="Left" Margin="65,0,0,0" VerticalAlignment="Center"/>
+        <TextBox x:Name="agetxt" HorizontalAlignment="Left" Margin="155,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label FontSize="22" Content="phone num" HorizontalAlignment="Left" Margin="21,268,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="phonetxt" HorizontalAlignment="Left" Margin="155,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="passtxt" HorizontalAlignment="Left" Margin="155,166,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label FontSize="22" Content="city" HorizontalAlignment="Left" Margin="339,0,0,0" VerticalAlignment="Center"/>
+        <Button FontSize="33" Content="sign up" HorizontalAlignment="Left" Margin="155,333,0,0" VerticalAlignment="Top" Background="#FFDDA5A5" Click="Button_Click_1"/>
+        <Button FontSize="33" Content="signin" HorizontalAlignment="Left" Margin="21,333,0,0" VerticalAlignment="Top" Background="#FFAAF995" Click="Button_Click"/>
+        <ComboBox Name="combogen" HorizontalAlignment="Left" Margin="422,150,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>
+                female
+            </ComboBoxItem>
+            <ComboBoxItem>
+                male
+            </ComboBoxItem>
+        </ComboBox>
+        <Label FontSize="22" Content="gender" HorizontalAlignment="Left" Margin="321,141,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="citycom" HorizontalAlignment="Left" Margin="422,0,0,0" VerticalAlignment="Center" Width="120">
+            <ComboBoxItem>
+                giza
+            </ComboBoxItem>
+            <ComboBoxItem>
+                cairo
+            </ComboBoxItem>
+            <ComboBoxItem>
+                alex
+            </ComboBoxItem>
+        </ComboBox>
+
+    </Grid>
+</Page>

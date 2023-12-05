@@ -1,0 +1,22 @@
+﻿<Page x:Class="shahd_ashrafexam.forgetpass"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:shahd_ashrafexam"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="forgetpass">
+
+    <Grid Background="#FFF3F3F3">
+        <Label FontSize="33" Content="forgetpass" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="22" Content="phonenum" HorizontalAlignment="Left" Margin="23,93,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="phonetxt" HorizontalAlignment="Left" Margin="172,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label FontSize="22" Content="new pass" HorizontalAlignment="Left" Margin="23,260,0,0" VerticalAlignment="Top"/>
+        <Label FontSize="22" Content="comfirmpass" HorizontalAlignment="Left" Margin="23,318,0,0" VerticalAlignment="Top"/>
+        <Button FontSize="23" Content="update password" HorizontalAlignment="Left" Margin="581,0,0,0" VerticalAlignment="Center" Background="#FFD88888" Click="Button_Click"/>
+        <PasswordBox x:Name="newpass" HorizontalAlignment="Left" Margin="155,280,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="conpass" HorizontalAlignment="Left" Margin="162,329,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Page>
